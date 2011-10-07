@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Test</title>
+</head>
+<body>
+
+ <video controls>
+     <source src="rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/mp4:mlmic/extremists_baseline.mp4">
+ </video>
+
+	<div id="mediaplayer">JW Player goes here</div>
+	
+	<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
+	<script type="text/javascript">
+		jwplayer("mediaplayer").setup({
+            provider: 'rtmp',
+            streamer:'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
+			//flashplayer: "mediaplayer-5.7/player.swf",
+			file: "mlmic/extremists_baseline.mp4",
+			image: "mediaplayer-5.7/preview.jpg",
+            modes:[
+                {type:'flash',src:'mediaplayer-5.7/player.swf'}
+                  ]
+		});
+	</script>
+
+
+
+</body>
+</html>
