@@ -14,7 +14,7 @@ public class Greeter {
 
     public String getMessage()
     {
-        return "Hello,  Person - experime   nt blah";
+        return "Hello,  Person";
     }
 
 
