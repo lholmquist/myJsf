@@ -32,6 +32,23 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+
+
+        <!-- PLugin to deploy to jboss as7,  set JBOSS_HOME to location of jboss 7 server -->
+        <plugin>
+            <groupId>org.jboss.as.plugins</groupId>
+            <artifactId>jboss-as-maven-plugin</artifactId>
+            <version>7.0.0.CR1</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>deploy</goal><!--In IntelliJ this is red likes in an error,  just ignore -->
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
     </plugins>
   </build>
 </project>
