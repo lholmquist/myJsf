@@ -2,22 +2,38 @@
 <html>
 <head>
     <title>Video Jim</title>
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+
+
+        $j("document").ready
+        {
+            document.getElementById("video1").addEventListener('canplay',canplayFunc,false);
+            document.getElementById("video1").addEventListener('canplaythrough',canplayT,false);
+        }
+
+
+
+        function canplayFunc()
+        {
+
+        }
+
+
+
+    </script>
 </head>
 <body>
-<div id ="v1">
- <video controls>
+<h3>HTML 5 Video Player</h3>
+<div id ="v1" >
+ <video id="video1" controls height="480" width="640" style="border: 1px solid black" autoplay>
      <source src="http://mpvodmedia.pascalcreativegroup.com:1935/pascal/_definst_/mp4:mlmic/Short_Basic_Clip.m4v/playlist.m3u8">
+
  </video>
  </div>
  
- <div id="v2">
- <video controls>
-     <source src="http://mpvodmedia.pascalcreativegroup.com:1935/pascal/_definst_/mp4:mlmic/extremists_baseline.mp4/playlist.m3u8">
- </video>
- </div>
-<a href="#"> New Label Missing </a>
-<p> New Label Missing Jim</p>
- <p> Create Dave issue</p>
+    <br/>
+<h3>Flash Video Player</h3>
 	<div id="mediaplayer">JW Player goes here</div>
 	
 	<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
@@ -27,19 +43,11 @@
             streamer:'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
 			//flashplayer: "mediaplayer-5.7/player.swf",
 			file: "mlmic/Short_Basic_Clip.m4v",
-			image: "mediaplayer-5.7/preview.jpg",
-            modes:[
+			modes:[
                 {type:'flash',src:'mediaplayer-5.7/player.swf'}
                   ]
 		});
 	</script>
-
-<table> <p> super change</p></table>
-
-<table> <p> another change - change</p></table>
-
-
-
 
 </body>
 </html>
