@@ -27,6 +27,23 @@
 
  </h:form>
 
+
+     <h:form rendered="#{request.userPrincipal == null}">
+        <h:inputText id="username" label="username:" value="#{loginA.username}"/>
+        <br/>
+        <h:inputSecret id="password" label="password:" value="#{loginA.password}"/>
+
+        <h:commandButton value="Login" action="#{loginA.login}"/>
+
+
+    </h:form>
+
+    User Principle:<h:outputText value="#{request.userPrincipal}"/>
+
+    <h:form>
+         <h:commandButton rendered="#{request.userPrincipal != null}" value="logout" action="#{loginA.logout}" />
+    </h:form>
+
 </h:body>
 
 </html>
