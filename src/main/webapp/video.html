@@ -20,34 +20,63 @@
         }
 
 
+        function pressplay()
+        {
+            jwplayer("mediaplayer").seek(20);
+            //jwplayer("mediaplayer").play();
+        }
+
 
     </script>
 </head>
 <body>
 <h3>HTML 5 Video Player</h3>
 <div id ="v1" >
- <video id="video1" controls height="480" width="640" style="border: 1px solid black" autoplay>
-     <source src="http://mpvodmedia.pascalcreativegroup.com:1935/pascal/_definst_/mp4:mlmic/Short_Basic_Clip.m4v/playlist.m3u8">
+    <video id="video1" controls height="480" width="640" style="border: 1px solid black" autoplay>
+        <source src="http://mpvodmedia.pascalcreativegroup.com:1935/pascal/_definst_/mp4:mlmic/Short_Basic_Clip.m4v/playlist.m3u8">
 
- </video>
- </div>
- 
-    <br/>
+    </video>
+</div>
+
+<br/>
 <h3>Flash Video Player</h3>
-	<div id="mediaplayer">JW Player goes here</div>
-	
-	<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
-	<script type="text/javascript">
-		jwplayer("mediaplayer").setup({
-            provider: 'rtmp',
-            streamer:'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
-			//flashplayer: "mediaplayer-5.7/player.swf",
-			file: "mlmic/Short_Basic_Clip.m4v",
-			modes:[
-                {type:'flash',src:'mediaplayer-5.7/player.swf'}
-                  ]
-		});
-	</script>
+<div id="mediaplayer">JW Player goes here</div>
+
+<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
+<script type="text/javascript">
+    jwplayer("mediaplayer").setup({
+        file: "mlmic/Short_Basic_Clip.m4v",
+                provider:'rtmp',
+                streamer:'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
+        //flashplayer: "mediaplayer-5.7/player.swf",
+
+        modes:[
+            {type:'flash',
+                src:'mediaplayer-5.7/player.swf'
+
+            },
+            {
+                type:'html5',
+                config:{
+                    'file':'http://mpvodmedia.pascalcreativegroup.com:1935/pascal/_definst_/mp4:mlmic/Short_Basic_Clip.m4v/playlist.m3u8'
+                    ,'provider':'video'
+                }
+            },
+            {
+                type:'download',
+                config:{
+                   'file':'http://mpvodmedia.pascalcreativegroup.com:1935/pascal/_definst_/mp4:mlmic/Short_Basic_Clip.m4v/playlist.m3u8',
+                    'provider':'video'
+                }
+            }
+        ]
+    });
+</script>
+
+
+<div>
+       <button id="playB"  name="Play" value="Play" onclick="pressplay();"></button>
+   </div>
 
 </body>
 </html>

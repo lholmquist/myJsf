@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Jim</title>
+    <script type="text/javascript" src="js/jquery-1.6.1.js"></script>
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+
+
+        $j("document").ready
+        {
+            //document.getElementById("video1").addEventListener('canplay',canplayFunc,false);
+            //document.getElementById("video1").addEventListener('canplaythrough',canplayT,false);
+
+
+
+            //document.getElementById("mediaplayer1").addEventListener('onPlaylistItem',playListLoaded,false);
+
+        }
+
+
+        function playListLoaded()
+        {
+           alert();
+        }
+
+
+        function canplayFunc()
+        {
+
+        }
+
+
+        function pressplay()
+        {
+            jwplayer("mediaplayer").seek(20);
+            //jwplayer("mediaplayer").play();
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+    <br/>
+<h3>Flash Video Player</h3>
+	<div id="mediaplayer">JW Player goes here</div>
+	
+	<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
+	<script type="text/javascript">
+		jwplayer("mediaplayer").setup({
+            provider: 'rtmp',
+            streamer:'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
+			//flashplayer: "mediaplayer-5.7/player.swf",
+			file: "mlmic/Short_Basic_Clip.m4v",
+			modes:[
+                {type:'flash',src:'mediaplayer-5.7/player.swf'}
+                  ]
+		});
+
+
+
+
+
+	</script>
+
+
+<div id='mediaplayer1'></div>
+
+<script type="text/javascript">
+  jwplayer('mediaplayer1').setup({
+    'flashplayer': 'mediaplayer-5.7/player.swf',
+    'id': 'playerID',
+    'width': '650',
+    'height': '240',
+    'playlist.position': 'right',
+    'playlist.size': '250',
+    //  'repeat':'list',
+    'playlist': [
+
+        {
+           'file': 'mlmic/Short_Basic_Clip.m4v',
+           'title': 'Big Buck Bunny Trailer',
+           'provider': 'rtmp',
+           'streamer': 'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
+           'image': 'http://thumbnails.server.com/thumbs/bunny.jpg',
+           'description': 'An animated short from the Blender project'
+        },
+        {
+           'file': 'mlmic/extremists_baseline.mp4',
+           'title': 'Sintel',
+           'streamer': 'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
+           'image': 'http://thumbnails.server.com/thumbs/sintel.jpg',
+           'provider': 'rtmp',
+           'description': 'An animated short from the Blender project'
+        },
+        {
+           'file': 'mlmic/Short_Basic_Clip.m4v',
+           'title': 'Elephant´s Dream',
+           'streamer': 'rtmp://mpvodmedia.pascalcreativegroup.com/pascal/_definst_/',
+           'image': 'http://thumbnails.server.com/thumbs/elephant.jpg',
+           'provider': 'rtmp',
+           'description': 'An animated short from the Blender project'
+        }
+    ]
+  });
+
+
+
+
+</script>
+   <div>
+       <button id="playB" value="Play" onclick="pressplay();"/>
+   </div>
+
+</body>
+</html>
