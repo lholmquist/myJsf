@@ -1,5 +1,5 @@
 <jboss-web>
-   <security-domain>mlmic</security-domain>
+   <!--<security-domain>mlmic</security-domain>-->
    <valve>
         <class-name>org.apache.catalina.authenticator.SingleSignOn</class-name>
     </valve>
