@@ -1,4 +1,4 @@
-import javax.enterprise.context.RequestScoped;
+import javax.ejb.Stateless;
 import javax.inject.Named;
 
 /**
@@ -9,7 +9,7 @@ import javax.inject.Named;
  * To change this template use File | Settings | File Templates.
  */
 @Named
-@RequestScoped
+@Stateless
 public class Greeter {
 
     public String getMessage()
