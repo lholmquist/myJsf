@@ -3,6 +3,7 @@
 <head>
     <title>Video Jim</title>
     <script type="text/javascript" src="js/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
     <script type="text/javascript">
         var $j = jQuery.noConflict();
 
@@ -42,12 +43,12 @@
     </script>
 </head>
 <body>
-
+<!--
     <br/>
 <h3>Flash Video Player</h3>
 	<div id="mediaplayer">JW Player goes here</div>
 	
-	<script type="text/javascript" src="mediaplayer-5.7/jwplayer.js"></script>
+	
 	<script type="text/javascript">
 		jwplayer("mediaplayer").setup({
             provider: 'rtmp',
@@ -65,11 +66,272 @@
 
 	</script>
 
+-->
 
+
+<h2>FLV relearns</h2>
+
+<div>Module 4</div>
 <div id='mediaplayer1'></div>
 
 <script type="text/javascript">
   jwplayer('mediaplayer1').setup({
+    'flashplayer': 'mediaplayer-5.7/player.swf',
+    'id': 'playerID',
+    'width': '650',
+    'height': '240',
+    'playlist.position': 'right',
+    'playlist.size': '250',
+     'provider': 'rtmp',
+    'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/',
+    //  'repeat':'list',
+    'playlist': [
+
+        {
+           'file': 't4_1.flv',
+           'title': 'relean 1',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+        {
+           'file': 't4_2.flv',
+           'title': 'relean 2',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+          {
+           'file': 't4_3.flv',
+           'title': 'relean 3',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't4_4.flv',
+           'title': 'relean 4',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't4_5.flv',
+           'title': 'relean 5',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't4_6.flv',
+           'title': 'relean 6',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't4_7.flv',
+           'title': 'relean 7',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't4_8.flv',
+           'title': 'relean 8',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't4_9.flv',
+           'title': 'relean 9',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        }
+        ,{
+           'file': 't4_10.flv',
+           'title': 'relean 10',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        }
+
+    ]
+  });
+
+
+
+
+</script>
+
+<div>Module 2</div>
+<div id='mediaplayer2'></div>
+
+<script type="text/javascript">
+  jwplayer('mediaplayer2').setup({
+    'flashplayer': 'mediaplayer-5.7/player.swf',
+    'id': 'playerID',
+    'width': '650',
+    'height': '240',
+    'playlist.position': 'right',
+    'playlist.size': '250',
+     'provider': 'rtmp',
+    'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/',
+    //  'repeat':'list',
+    'playlist': [
+
+        {
+           'file': 't2_1.flv',
+           'title': 'relean 1',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+        {
+           'file': 't2_2.flv',
+           'title': 'relean 2',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+          {
+           'file': 't2_3.flv',
+           'title': 'relean 3',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't2_4.flv',
+           'title': 'relean 4',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't2_5.flv',
+           'title': 'relean 5',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't2_6.flv',
+           'title': 'relean 6',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't2_7.flv',
+           'title': 'relean 7',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't2_8.flv',
+           'title': 'relean 8',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't2_9.flv',
+           'title': 'relean 9',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        }
+        ,{
+           'file': 't2_10.flv',
+           'title': 'relean 10',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        }
+
+    ]
+  });
+
+
+
+
+</script>
+
+<div>Module 3</div>
+<div id='mediaplayer3'></div>
+
+<script type="text/javascript">
+  jwplayer('mediaplayer3').setup({
+    'flashplayer': 'mediaplayer-5.7/player.swf',
+    'id': 'playerID',
+    'width': '650',
+    'height': '240',
+    'playlist.position': 'right',
+    'playlist.size': '250',
+     'provider': 'rtmp',
+    'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/',
+    //  'repeat':'list',
+    'playlist': [
+
+        {
+           'file': 't3_1.flv',
+           'title': 'relean 1',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+        {
+           'file': 't3_2.flv',
+           'title': 'relean 2',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+          {
+           'file': 't3_3.flv',
+           'title': 'relean 3',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't3_4.flv',
+           'title': 'relean 4',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't3_5.flv',
+           'title': 'relean 5',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't3_6.flv',
+           'title': 'relean 6',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't3_7.flv',
+           'title': 'relean 7',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't3_8.flv',
+           'title': 'relean 8',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        },
+            {
+           'file': 't3_9.flv',
+           'title': 'relean 9',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        }
+        ,{
+           'file': 't3_10.flv',
+           'title': 'relean 10',
+            'provider': 'rtmp',
+            'streamer': 'rtmp://flv.z1.mii-streaming.net/pascal/mlmic/'
+        }
+
+    ]
+  });
+
+
+
+
+</script>
+   
+
+<h2>FLV modules</h2>
+<div id='mediaplayerflv'></div>
+
+<script type="text/javascript">
+  jwplayer('mediaplayerflv').setup({
     'flashplayer': 'mediaplayer-5.7/player.swf',
     'id': 'playerID',
     'width': '650',
@@ -145,13 +407,8 @@
     ]
   });
 
-
-
-
 </script>
-   <div>
-       <button id="playB" value="Play" onclick="pressplay();"/>
-   </div>
 
+   
 </body>
 </html>

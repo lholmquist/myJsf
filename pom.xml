@@ -66,14 +66,14 @@
             <groupId>org.jboss.as.plugins</groupId>
             <artifactId>jboss-as-maven-plugin</artifactId>
             <version>7.0.0.CR1</version>
-            <!--<executions>
+            <executions>
                 <execution>
                     <phase>package</phase>
                     <goals>
-                        <goal>deploy</goal>--><!--In IntelliJ this is red likes in an error,  just ignore -->
-                  <!--  </goals>
+                        <goal>deploy</goal><!--In IntelliJ this is red likes in an error,  just ignore -->
+                   </goals>
                 </execution>
-            </executions>   -->
+            </executions> 
         </plugin>
 
         <plugin>
